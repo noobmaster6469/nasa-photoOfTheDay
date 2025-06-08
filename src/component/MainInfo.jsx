@@ -30,7 +30,7 @@ const MainInfo = () => {
           <div className="title">
             <SplitText
               text="Welcome to Space Thing"
-              className="text-5xl font-semibold h-fit"
+              className="md:text-5xl sm:text-4xl text-3xl font-semibold h-fit"
               delay={100}
               duration={0.6}
               ease="power3.out"
@@ -43,11 +43,16 @@ const MainInfo = () => {
             />
           </div>
 
-          <div className="description">{data?.explanation}</div>
+          <div className="description text-lg">{data?.explanation}</div>
         </div>
-        <div className="flex flex-col gap-4 items-center justify-center w-2/5">
-          <span className="text-3xl">Picture of the day</span>
-          <img src={data?.url} alt="" className="rounded-xl" />
+        <div className="flex flex-col gap-4 items-center justify-center w-full sm:mt-0 mt-8">
+          <span className="sm:text-3xl text-2xl">Picture of the day</span>
+          <img
+            src={data?.url}
+            alt=""
+            className="rounded-xl md:w-[400px] h-[400px] w-full object-cover shadow-lg"
+            loading="lazy"
+          />
         </div>
       </div>
     </>
