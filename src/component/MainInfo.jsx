@@ -50,7 +50,7 @@ const MainInfo = () => {
           <img
             src={data?.url}
             alt=""
-            className="rounded-xl md:w-[400px] h-[400px] w-full object-cover shadow-lg"
+            className="rounded-xl md:w-[400px] h-[400px] w-full object-cover hover:shadow-[0_0_40px_10px_rgba(128,0,255,0.6)] cursor-pointer transition-all duration-200 ease-out"
             loading="lazy"
           />
         </div>

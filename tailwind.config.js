@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "grid-image": "url('./grid.jpg')",
+        "grid-image": "url('/grid.jpg')",
       },
     },
   },

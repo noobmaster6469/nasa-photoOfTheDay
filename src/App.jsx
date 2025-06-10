@@ -5,7 +5,7 @@ import MainInfo from "./component/MainInfo";
 const App = () => {
   return (
     <>
-      <div className="bg-grid-image text-white  bg-cover bg-no-repeat">
+      <div className=" text-white ">
         <MainInfo />
       </div>
     </>
